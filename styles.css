@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc88ae;
+    padding: 20px 80px;
+    z-index: 10;
+    font-family: 'Optima';
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li {
+    margin-left: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    letter-spacing: 1.25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffff67;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+/* Footer Styling */
+.footer {
+    border-top: 1px solid #dc88ae; 
+    text-align: center; 
+    padding: 50px 20px; 
+    background-color: #dc88ae; 
+    color: white; 
+    width: 100%;
+    font-family: 'Optima';
+}
+
+.footer p {
+    margin: 0; 
+    font-size: 24px;
+}
+
+/* HERO Section Styling */
+.hero {
+    position: relative;
+    background-color: #abd49c;
+    background-size: cover;
+    background-position: center;
+    /* height: 500px; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding: 100px 20px; 
+    z-index: 5;
+    letter-spacing: 1.25px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2; 
+    max-width: 750px; 
+    margin-left: 90px;
+    margin-right: 40px;
+}
+
+.hero h1 {
+    font-size: 88px; 
+    margin-bottom: 20px;
+    font-family: 'Optima';
+}
+
+.hero p {
+    font-size: 25px;
+}
+
+.profile-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 90px;
+    border: 7px solid #ffff67;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ABOUT Section Styling */
+.about {
+    position: relative;
+    background-color: #abd49c;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding: 100px 20px; 
+    z-index: 5;
+    letter-spacing: 1.25px;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.about-text {
+    position: relative;
+    z-index: 2; 
+    max-width: 750px; 
+    margin-left: 90px;
+    margin-right: 40px;
+}
+
+.about h1 {
+    font-size: 68px; 
+    margin-bottom: 20px;
+    font-family: 'Optima';
+}
+
+.about p {
+    font-size: 25px;
+}
+
+.second-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 90px;
+    border: 7px solid #ffff67;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* MY WORK Section Styling */
+.work {
+    position: relative;
+    background-color: #abd49c;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding: 50px 20px; 
+    z-index: 5;
+    letter-spacing: 1.25px;
+}
+
+.work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.work-text {
+    position: relative;
+    z-index: 2; 
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.work h1 {
+    font-size: 58px; 
+    margin-bottom: 10px;
+    font-family: 'Optima';
+}
+
+.work p {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    align-items: center;
+    margin-top: 10px; 
+    width: 90%;
+    margin-left: 60px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.work-1-image {
+    display: block;
+    margin: 20px auto; 
+    max-width: 40%; 
+    height: auto;
+}
+
+.work-3-image {
+    display: block;
+    margin: 20px auto; 
+    max-width: 80%; 
+    height: auto;
+}
+
+.btn {
+    display: block; 
+    padding: 20px 20px;
+    margin: 15px auto;
+    background-color: #dc88ae;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px; 
+    font-size: 25px;
+    width: fit-content;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffb2d5;
+    color: white;
+}
+/* CONTACT Section Styling */
+.contact {
+    position: relative;
+    background-color: #abd49c;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding: 100px 20px; 
+    z-index: 5;
+    letter-spacing: 1.25px;
+}
+
+.contact-text {
+    position: relative;
+    z-index: 2;
+    margin-left: 90px;
+    margin-right: 40px;
+}
+
+.contact h1 {
+    font-size: 68px; 
+    margin-bottom: 20px;
+    font-family: 'Optima';
+}
+
+.contact p {
+    font-size: 25px;
+}
